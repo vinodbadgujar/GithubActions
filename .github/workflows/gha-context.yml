@@ -1,0 +1,8 @@
+name: GhAContext
+on: [push, workflow_dispatch]
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: context
+        run: echo "${{ totoJson(github) }}"
