@@ -4,7 +4,17 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: greeting
-        run: echo "hello"
-      - name: bye
-        run: echo "bye"
+      - name: testcases start
+        run: echo "testcases are running..."
+      - name: testcases end
+        run: |
+          echo "testcases are passed."
+          echo "testcases are completed."
+  build-stage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build start
+        run: echo "build started.."
+      - name: build end
+        run: echo "build completed"
+          
