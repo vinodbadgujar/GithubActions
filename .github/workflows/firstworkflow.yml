@@ -11,6 +11,7 @@ jobs:
           echo "testcases are passed."
           echo "testcases are completed."
   build-stage:
+    needs: [first-job]
     runs-on: ubuntu-latest
     steps:
       - name: build start
